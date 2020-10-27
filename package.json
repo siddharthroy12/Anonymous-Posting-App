@@ -8,7 +8,7 @@
     "start": "node index.js",
     "start-watch": "nodemon index.js",
     "dev": "concurrently \"yarn run start-watch\" \"cd client && yarn start\"",
-    "build": "cd client && yarn run build"
+    "build": "cd client && yarn install && yarn run build && cd .."
   },
   "license": "MIT",
   "dependencies": {
