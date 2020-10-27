@@ -1,0 +1,48 @@
+h1, p {
+    text-align: center;
+}
+
+ul {
+    border: 2px solid;
+    list-style: none;
+    padding: 10px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    margin-bottom: 10px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.text {
+    margin: 0;
+    padding: 1px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.data {
+    text-align: right;
+    margin:0;
+}
+
+.data span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li button {
+    margin-left: 10px;
+}
+
+#input-container {
+    display: flex;
+    justify-content: center;
+}
+
+#input-container input, #input-container button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
