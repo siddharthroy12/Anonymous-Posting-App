@@ -16,6 +16,7 @@ class App extends react.Component {
         this.submitAction = this.submitAction.bind(this);
         this.handleInput = this.handleInput.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
+        this.getTodos = this.getTodos.bind(this);
     }
 
     handleInput(event) {
