@@ -12,7 +12,8 @@ const TodoSchema = new  Schema ({
         required: [true, "Date is required"],
         default: Date.now
     },
-    ip: String // Yes not required
+    ip: String, // Yes, not required
+    createdAt: { type: Date, expires: '2m', default: Date.now }
 })
 
 const TodoModel = new mongoose.model('todo', TodoSchema)
