@@ -28,7 +28,6 @@ class App extends react.Component {
     getTodos() {
         axios.get('/api/todo')
             .then(res => {
-                console.log(res.data.length);
                 if (res.data.length === 0) {
                     this.setState({
                         todos: [{action:"No Post exist :(",_id:"sad"}]
@@ -77,7 +76,6 @@ class App extends react.Component {
     }
 
     render() {
-        console.log(this.state.todos);
         const list = this.state.todos.map((action) => {
             if (action.action === 'Loading' || action.action === "No Post exist :(") {
                 return (
@@ -103,8 +101,10 @@ class App extends react.Component {
                 <p>Your Post get will only live for 2 minutes.</p>
                 <div id="input-container">
                     <input onChange={this.handleInput} value={this.state.input} type="text"></input>
-                    <button onClick={this.submitAction} >Submit</button>
-                    <button onClick={this.getTodos}>Refresh</button>
+                    <div>
+                        <button onClick={this.submitAction} >Submit</button>
+                        <button onClick={this.getTodos}>Refresh</button>
+                    </div>
                 </div>
                 <div id="list">
                     <ul>
