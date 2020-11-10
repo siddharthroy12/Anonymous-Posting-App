@@ -96,6 +96,7 @@ class App extends react.Component {
         return (
             <>
                 <h1>Anonymous Posting App</h1>
+                <p>Made By <a href="https://siddharthroy.netlify.app/">Siddharth Roy</a></p>
                 <p>Since everyone can add and remove posts please don't spam or do stupid things.</p>
                 <p>I created this to learn backend stuffs so don't complain about design</p>
                 <p>Your Post will only live for 2 minutes.</p>
